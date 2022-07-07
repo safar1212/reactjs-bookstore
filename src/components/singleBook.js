@@ -1,10 +1,17 @@
 import React from 'react';
 
-const SingleBook = () => (
+const SingleBook = (props) => {
+
+    const {title, author} = props
+
+    return (
   <div className="single-book">
-    <div>title</div>
-    <div>author</div>
+    <ul>
+        <li>{title = "The mountain"}{author = "Safar"}<button>Remove</button></li>
+    </ul>
   </div>
-);
+)
+
+};
 
 export default SingleBook;

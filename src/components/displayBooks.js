@@ -2,12 +2,17 @@ import React from 'react';
 import AddBook from './form';
 import SingleBook from './singleBook';
 
-const DisplayBooks = () => (
+const DisplayBooks = () => {
+    const books = [];
+
+    return (
   <div className="book-list">
-    <button type="submit">Remove</button>
-    <SingleBook />
-    <AddBook />
+       {books.map((book) => <SingleBook title={book.title} author={book.author} />)}
+       <AddBook />
   </div>
-);
+)};
 
 export default DisplayBooks;
+
+
+
