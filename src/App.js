@@ -9,13 +9,13 @@ import NotMatch from './components/pages/notMatch';
 function App() {
   return (
     <Router>
-       <Navbar />
-    <Routes>
-      <Route path="/" element={<DisplayBooks />} />
-      <Route path="/categories" element={<Categories />} />
-      <Route path="*" element={<NotMatch />} />
-    </Routes>
-  </Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<DisplayBooks />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="*" element={<NotMatch />} />
+      </Routes>
+    </Router>
   );
 }
 

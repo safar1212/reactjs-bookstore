@@ -6,7 +6,6 @@ body {
   background-color: whitesmoke;
 }
 
-
 nav {
   display: flex;
   align-items: center;
@@ -14,7 +13,7 @@ nav {
   justify-content: flex-start;
   width: 100%;
   padding-left: 6.25rem;
-  margin: 0px auto;
+  margin: 0 auto;
   color: #0290ff;
   font-size: 22px;
   height: 6.3rem;
@@ -38,7 +37,6 @@ nav ul li a {
   text-decoration: none;
   color: black;
 }
-
 
 nav ul li a:hover {
   color: #0290ff;
