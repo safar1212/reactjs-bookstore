@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 6.25rem;
+  margin: 0 auto;
+  color: #0290ff;
+  font-size: 22px;
+  height: 6.3rem;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  gap: 60px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: #0290ff;
+}
