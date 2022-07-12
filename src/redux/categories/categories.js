@@ -1,27 +1,22 @@
-
-const CHECKSTATUS = "CHECKSTATUS";
+const CHECKSTATUS = 'CHECKSTATUS';
 
 // reducer
 
 const checkStatusReducer = (state = [], action) => {
-
-    switch(action.type) {
-        case CHECKSTATUS: {
-            return {
-                type: "Under construction"
-            }
-        }
-        default: {
-            return state;
-        }
+  switch (action.type) {
+    case CHECKSTATUS: {
+      return {
+        type: 'Under construction',
+      };
     }
-}
+    default: {
+      return state;
+    }
+  }
+};
 
 // actions
 
-export const checkStatus = () => {
-
-    type: CHECKSTATUS
-}
+export const checkStatus = () => CHECKSTATUS;
 
 export default checkStatusReducer;
