@@ -3,7 +3,7 @@ const REMOVE_BOOK = bookstore / books / REMOVE_BOOK;
 
 // reducer
 
-const Reducer = (state = [], action) => {
+const Reducer = (state = ["book1", "book2", "book3", "book4"], action) => {
   let booksArray;
   switch (action.type) {
     case ADD_BOOK: {
