@@ -1,7 +1,6 @@
 import React from 'react';
-import {useDispatch} from "react-redux";
-import {removeBook} from "../redux/books/books";
-
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const SingleBook = ({ title, author, id }) => {
   // const { title, author, id } = props;
@@ -11,7 +10,7 @@ const SingleBook = ({ title, author, id }) => {
   const handleRemove = (e) => {
     dispatch(removeBook(e.target.id));
     console.log(removeBook);
-  }
+  };
 
   return (
     <div className="single-book">

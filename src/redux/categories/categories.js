@@ -5,9 +5,7 @@ const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 const checkStatusReducer = (state = '', action) => {
   switch (action.type) {
     case CHECK_STATUS: {
-      
-      return 'Under construction'
-
+      return 'Under construction';
     }
     default: {
       return state;
@@ -22,5 +20,3 @@ export const checkStatus = () => ({
 });
 
 export default checkStatusReducer;
-
-

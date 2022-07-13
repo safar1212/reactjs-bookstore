@@ -7,19 +7,24 @@ body {
 }
 
 .single-book {
-  border: 2px red solid;
+  /* border: 2px red solid; */
   height: 100px;
+
   /* display: flex; */
 }
 
+nav ul li {
+  list-style-type: none;
+}
+
 .book-list ul li {
-  border: 2px gray solid;
+  /* border: 2px gray solid; */
   display: flex;
   gap: 50px;
 }
 
 .add-book {
-  border: 2px green solid;
+  /* border: 2px green solid; */
   height: 200px;
 }
 
@@ -44,10 +49,6 @@ nav ul {
   justify-content: flex-start;
   text-decoration: none;
   gap: 60px;
-}
-
-nav ul li {
-  list-style-type: none;
 }
 
 nav ul li a {

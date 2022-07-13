@@ -3,22 +3,19 @@ const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // reducer
 
-
 // actions
 
-export const addBook = (book) => {
-  return {
-   type: ADD_BOOK,
-   book,
-  }
-};
+export const addBook = (book) => ({
+  type: ADD_BOOK,
+  book,
+});
 
 export const removeBook = (index) => ({
   type: REMOVE_BOOK,
   index,
 });
 
-const Reducer = (state = [{title: "book1", author: "Safar", id: '1'}, {title: "book2", author: "Safar", id: '2'}], action) => {
+const Reducer = (state = [{ title: 'book1', author: 'Safar', id: '1' }, { title: 'book2', author: 'Safar', id: '2' }], action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.book];
