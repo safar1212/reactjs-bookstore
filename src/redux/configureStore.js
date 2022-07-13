@@ -1,12 +1,13 @@
-import { Redux, combineReducers } from '@reduxjs/toolkit';
+// import { combineReducers, createStore } from '@reduxjs/toolkit';
+import { combineReducers, createStore} from 'redux';
 import Reducer from './books/books';
 import checkStatusReducer from './categories/categories';
 
 const configureStore = combineReducers({
   book: Reducer,
-  statusCheck: checkStatusReducer,
+  statusCheck: checkStatusReducer
 });
 
-const store = Redux.createStore(configureStore);
+const store = createStore(configureStore);
 
 export default store;

@@ -6,6 +6,23 @@ body {
   background-color: whitesmoke;
 }
 
+.single-book {
+  border: 2px red solid;
+  height: 100px;
+  /* display: flex; */
+}
+
+.book-list ul li {
+  border: 2px gray solid;
+  display: flex;
+  gap: 50px;
+}
+
+.add-book {
+  border: 2px green solid;
+  height: 200px;
+}
+
 nav {
   display: flex;
   align-items: center;
