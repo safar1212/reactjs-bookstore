@@ -2,6 +2,7 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import Reducer from './books/books';
 import checkStatusReducer from './categories/categories';
+import thunk from 'redux-thunk';
 
 const configureStore = combineReducers({
   book: Reducer,
