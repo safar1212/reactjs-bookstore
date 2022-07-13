@@ -19,8 +19,8 @@
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
       "react/prop-types": 0,
-      "no-use-before-define": "off",
-      "no-undef": "off",
+      // "no-use-before-define": "off",
+      // "no-undef": "off",
       "no-shadow": "off"
     },
     "ignorePatterns": [
