@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import AddBook from './form';
 import SingleBook from './singleBook';
@@ -6,12 +6,16 @@ import { getBooks } from '../redux/books/books';
 
 const DisplayBooks = () => {
   const books = useSelector((state) => state.book);
-  // console.log(books);
+  console.log(books);
 
   const dispatch = useDispatch;
 
-  dispatch(getBooks());
+  // dispatch(getBooks());
   // console.log( "clicked", dispatch());
+
+  // useEffect(() => {
+  //   dispatch(getBooks());
+  // },[]);
 
 
 
