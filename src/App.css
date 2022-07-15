@@ -12,7 +12,7 @@ body {
   height: 170px;
   width: 85%;
   display: flex;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 20px;
@@ -37,7 +37,14 @@ body {
 }
 
 .chapter-div p {
-  margin: 0px;
+  margin: 0;
+}
+
+.title-div p,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
 }
 
 .chapter-div h3 {
@@ -66,35 +73,33 @@ body {
   fill: none;
   stroke-width: 5%;
   stroke: #0290ff;
-  transform: translate(5px,5px);
+  transform: translate(5px, 5px);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 
 .percentage-div svg circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
 
-
 .percentage-div svg circle:nth-child(2) {
   stroke-dashoffset: 250;
   stroke: #0290ff;
 }
+
 .title-div {
   margin-bottom: 20px;
 }
 
-.title-div p, h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 20px;
-}
-
 .title-div h3 {
   font-weight: 700;
+}
+
+.percentage-div p,
+h1 {
+  margin: 0;
 }
 
 .title-div p:nth-child(1) {
@@ -104,7 +109,6 @@ body {
 
 .title-div p:nth-child(3) {
   color: #0290ff;
-
 }
 
 .button-div button {
@@ -114,26 +118,29 @@ body {
   cursor: pointer;
 }
 
+.add-book form button {
+  height: 35px;
+  width: 150px;
+  background-color: #0290ff;
+  color: white;
+  border: #0290ff;
+  cursor: pointer;
+}
+
 .button-div button:nth-child(2) {
   border-left: 2px rgb(170, 169, 169) solid;
   border-right: 2px rgb(170, 169, 169) solid;
 }
 
 .percentage-text {
-  /* border: 2px red solid; */
   margin-left: 10px;
 }
 
-.percentage-div p, h1 {
-  margin: 0px;
-}
-
 .verticle-line {
-  width: 0px;
+  width: 0;
   height: 80px;
   border: 1px rgb(170, 169, 169) solid;
 }
-
 
 nav ul li {
   list-style-type: none;
@@ -141,6 +148,7 @@ nav ul li {
 
 .book-list ul li {
   display: flex;
+
   /* border: 2px violet solid; */
 }
 
@@ -148,13 +156,11 @@ nav ul li {
   /* border: 2px green solid; */
   height: 150px;
   width: 85%;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 10px;
   margin-bottom: 30px;
 }
-
-
 
 .add-book h2 {
   color: rgb(133, 133, 133);
@@ -164,15 +170,6 @@ nav ul li {
   height: 35px;
   margin-right: 10px;
   width: 30%;
-}
-
-.add-book form button {
-  height: 35px;
-  width: 150px;
-  background-color: #0290ff;
-  color: white;
-  border: #0290ff;
-  cursor: pointer;
 }
 
 nav {
@@ -210,5 +207,3 @@ nav ul li a:hover {
 .add-book form input:nth-child(3) {
   width: 20%;
 }
-
-
