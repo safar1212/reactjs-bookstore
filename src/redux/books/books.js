@@ -30,7 +30,7 @@ export const removeBook = (index) => async (dispatch) => {
     .then(() => dispatch({ type: REMOVE_BOOK, index }));
 };
 
- export const getBooks = () => async (dispatch) => {
+export const getBooks = () => async (dispatch) => {
   await fetch(url)
     .then((res) => res.json())
     .then((book) => {
@@ -44,7 +44,7 @@ export const removeBook = (index) => async (dispatch) => {
         });
       });
 
-     dispatch({ type: GET_BOOKS, booksArray});
+      dispatch({ type: GET_BOOKS, booksArray });
     });
 };
 
