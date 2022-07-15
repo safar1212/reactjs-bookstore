@@ -16,7 +16,11 @@
 
 - CSS 🔥
 - React 😋
-- Babel 😉
+- Redux🔥
+- React-Redux🔥
+- redux-thunk🔥
+- react Router Dom🔥
+-  😉
 -DDT testing.
 
 ## Functionalites 😄

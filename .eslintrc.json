@@ -21,6 +21,7 @@
       "react/prop-types": 0,
       // "no-use-before-define": "off",
       // "no-undef": "off",
+      "camelcase": "off",
       "no-shadow": "off"
     },
     "ignorePatterns": [
