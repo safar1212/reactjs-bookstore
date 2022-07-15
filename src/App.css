@@ -7,25 +7,172 @@ body {
 }
 
 .single-book {
-  /* border: 2px red solid; */
-  height: 100px;
-
-  /* display: flex; */
+  background-color: white;
+  border: 1px white solid;
+  height: 170px;
+  width: 85%;
+  display: flex;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
 }
+
+.book-button-div {
+  margin-right: 180px;
+}
+
+.single-book .percentage-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-book .chapter-div {
+  margin-right: 30px;
+}
+
+.chapter-div p {
+  margin: 0px;
+}
+
+.chapter-div h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chapter-div button {
+  background-color: #0290ff;
+  color: white;
+  height: 40px;
+  width: 80%;
+  border: 2px white solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.percentage-div svg {
+  width: 125px;
+  height: 120px;
+}
+
+.percentage-div svg circle {
+  width: 120px;
+  height: 120px;
+  fill: none;
+  stroke-width: 5%;
+  stroke: #0290ff;
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+
+.percentage-div svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+
+.percentage-div svg circle:nth-child(2) {
+  stroke-dashoffset: 250;
+  stroke: #0290ff;
+}
+.title-div {
+  margin-bottom: 20px;
+}
+
+.title-div p, h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.title-div h3 {
+  font-weight: 700;
+}
+
+.title-div p:nth-child(1) {
+  font-weight: 700;
+  color: rgb(170, 169, 169);
+}
+
+.title-div p:nth-child(3) {
+  color: #0290ff;
+
+}
+
+.button-div button {
+  border: 1px white solid;
+  background-color: white;
+  color: #0290ff;
+  cursor: pointer;
+}
+
+.button-div button:nth-child(2) {
+  border-left: 2px rgb(170, 169, 169) solid;
+  border-right: 2px rgb(170, 169, 169) solid;
+}
+
+.percentage-text {
+  /* border: 2px red solid; */
+  margin-left: 10px;
+}
+
+.percentage-div p, h1 {
+  margin: 0px;
+}
+
+.verticle-line {
+  width: 0px;
+  height: 80px;
+  border: 1px rgb(170, 169, 169) solid;
+}
+
 
 nav ul li {
   list-style-type: none;
 }
 
 .book-list ul li {
-  /* border: 2px gray solid; */
   display: flex;
-  gap: 50px;
+  /* border: 2px violet solid; */
 }
 
 .add-book {
   /* border: 2px green solid; */
-  height: 200px;
+  height: 150px;
+  width: 85%;
+  margin: 0px auto;
+  padding-left: 30px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+.add-book h2 {
+  color: rgb(133, 133, 133);
+}
+
+.add-book form input {
+  height: 35px;
+  margin-right: 10px;
+  width: 30%;
+}
+
+.add-book form button {
+  height: 35px;
+  width: 150px;
+  background-color: #0290ff;
+  color: white;
+  border: #0290ff;
+  cursor: pointer;
 }
 
 nav {
@@ -59,3 +206,9 @@ nav ul li a {
 nav ul li a:hover {
   color: #0290ff;
 }
+
+.add-book form input:nth-child(3) {
+  width: 20%;
+}
+
+

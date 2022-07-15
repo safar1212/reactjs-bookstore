@@ -17,13 +17,43 @@ const SingleBook = ({
     <div className="single-book">
       <ul>
         <li id={item_id}>
-          <h3>{title}</h3>
-          <h3>{author}</h3>
-          <h3>{category}</h3>
-          <h3>{item_id}</h3>
-          <button id={item_id} onClick={handleRemove} type="submit">Remove</button>
+          <div className="book-button-div">
+            <div className="title-div">
+              <p>{category}</p>
+              <h3>{title}</h3>
+              <p>{author}</p>
+            </div>
+            <div className="button-div">
+              <button type="submit">Comments</button>
+              <button id={item_id} onClick={handleRemove} type="submit">
+                Remove
+              </button>
+              <button type="submit">Edit</button>
+            </div>
+          </div>
         </li>
       </ul>
+      <div className="percentage-div">
+        {/* <div className="circle">
+          <div className="outer">
+            <div className="inner" />
+          </div>
+        </div> */}
+        <svg>
+          <circle cx="60" cy="60" r="40" />
+          <circle cx="60" cy="60" r="40" />
+        </svg>
+        <div className="percentage-text">
+          <h1>65%</h1>
+          <p>Completed</p>
+        </div>
+      </div>
+      <div className="verticle-line" />
+      <div className="chapter-div">
+        <p>CURRENT CHAPTER</p>
+        <h3>Chapter 4&#x205A; &#8246;The secret of success&#8246;</h3>
+        <button type="submit">UPDATE PROGRESS</button>
+      </div>
     </div>
   );
 };
