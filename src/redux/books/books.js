@@ -48,19 +48,6 @@ export const getBooks = () => async (dispatch) => {
     });
 };
 
-// export const getBooks = createAsyncThunk(GET_BOOKS, async () => {
-//   const books = await axios.get(url);
-//   const objectOfBooks = Object.entries(books.data).map((book) => {
-//     const {
-//       title, author, category, item_id,
-//     } = book[0];
-//     return {
-//       item_id, title, author, category,
-//     };
-//   });
-//   return objectOfBooks;
-// });
-
 // reducer
 
 const Reducer = (state = [], action) => {
