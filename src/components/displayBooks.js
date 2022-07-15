@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import AddBook from './form';
 import SingleBook from './singleBook';
@@ -11,17 +11,10 @@ const DisplayBooks = () => {
   const dispatch = useDispatch();
 
   // dispatch(getBooks());
-  // console.log( "clicked", dispatch());
-
-  // useEffect(() => {
-  //   dispatch(getBooks());
-  // },[]);
 
   useEffect(() => {
     dispatch(getBooks(books));
   }, [dispatch]);
-
-
 
   return (
     <div className="book-list">

@@ -13,7 +13,9 @@ const AddBook = () => {
 
   const addNewBook = (e) => {
     e.preventDefault();
-    dispatch(addBook({ title, author, category, item_id: uuidv4() }));
+    dispatch(addBook({
+      title, author, category, item_id: uuidv4(),
+    }));
     setTitle('');
     setAuthor('');
     setCategory('');
@@ -29,7 +31,7 @@ const AddBook = () => {
 
   const changeCategory = (e) => {
     setCategory(e.target.value);
-  }
+  };
 
   return (
     <div className="add-book">
