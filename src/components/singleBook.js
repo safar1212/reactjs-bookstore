@@ -34,11 +34,6 @@ const SingleBook = ({
         </li>
       </ul>
       <div className="percentage-div">
-        {/* <div className="circle">
-          <div className="outer">
-            <div className="inner" />
-          </div>
-        </div> */}
         <svg>
           <circle cx="60" cy="60" r="40" />
           <circle cx="60" cy="60" r="40" />
