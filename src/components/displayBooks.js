@@ -6,7 +6,7 @@ import { getBooks } from '../redux/books/books';
 
 const DisplayBooks = () => {
   const books = useSelector((state) => state.book);
-  console.log(books);
+  // console.log(books);
 
   const dispatch = useDispatch();
 
@@ -20,7 +20,7 @@ const DisplayBooks = () => {
     <div className="book-list">
       {books.map((book) => (
         <SingleBook
-          key={book.title}
+          key={book.item_id}
           item_id={book.item_id}
           title={book.title}
           author={book.author}
