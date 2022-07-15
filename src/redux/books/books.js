@@ -5,14 +5,9 @@ const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 const GET_BOOKS = 'bookstore/books/GET_BOOKS';
 
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ydC9dksyiqALOOpcJHPu/books';
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/z9HYwqfQehINXNpxFodv/books';
 
 // actions
-
-// export const getBook = (book) => ({
-//   type: GET_BOOKS,
-//   book,
-// });
 
 export const addBook = (book) => async (dispatch) => {
   await fetch(url, {

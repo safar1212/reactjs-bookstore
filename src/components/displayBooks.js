@@ -8,7 +8,7 @@ const DisplayBooks = () => {
   const books = useSelector((state) => state.book);
   console.log(books);
 
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
   // dispatch(getBooks());
   // console.log( "clicked", dispatch());
@@ -16,6 +16,10 @@ const DisplayBooks = () => {
   // useEffect(() => {
   //   dispatch(getBooks());
   // },[]);
+
+  useEffect(() => {
+    dispatch(getBooks(books));
+  }, [dispatch]);
 
 
 
