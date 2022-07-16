@@ -4,10 +4,15 @@
 
 > This website is build using React. This website is about books. You can add remove and update books in the website. Moreover, it also has three pages, and have been build as SPA. 😋
 
+## Live Version  ✔️
+
+[Live Demo Link](https://stupendous-dieffenbachia-47916f.netlify.app/)
+
+
+
  ## ScreenShot
  
- <!-- ![2022-07-07_13-33-50]() -->
-
+![2022-07-16_17-47-56](https://user-images.githubusercontent.com/78845635/179355540-641c6e4d-3c01-4e3c-9e00-89e22f0b4d7f.jpg)
 
 
                               
@@ -28,14 +33,6 @@
 - You can add a book. ✔️
 - You can update the book.✔️
 - You can delete a book ✔️
-
-
-
-
-
-<!-- ## Live Version  ✔️
-
-[Live Demo Link]() -->
 
 
 
