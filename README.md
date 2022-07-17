@@ -2,7 +2,7 @@
 
 ## Welcome! 👋
 
-> This website is build using React. This website is about books. You can add remove and update books in the website. Moreover, it also has three pages, and have been build as SPA. 😋
+> This website is build using React. This website is about books. You can add remove and update books in the website. Moreover, it also has two pages, and have been build as SPA. 😋
 
 ## Live Version  ✔️
 
@@ -25,8 +25,7 @@
 - React-Redux🔥
 - redux-thunk🔥
 - react Router Dom🔥
--  😉
--DDT testing.
+-DDT testing.😄
 
 ## Functionalites 😄
 
